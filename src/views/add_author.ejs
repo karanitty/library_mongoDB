@@ -87,20 +87,20 @@
           
           
           <!--/stories-->
-          <form action="#" class="col-lg-5-signin"  style = "width: 50%; margin-left: 25%; margin-top: 5%;" onsubmit="window.alert('Author has been added to the Library');">
+          <form action="/add_author/add" method = "POST" class="col-lg-5-signin"  style = "width: 50%; margin-left: 25%; margin-top: 5%;">
             <div class="mb-3">
               <label for="name" class="form-label" style="margin-left: 43%;">Name</label>
-              <input type="text" class="form-control" id="title" placeholder = "Enter Name of Author" required aria-describedby="emailHelp">
+              <input type="text" class="form-control" name="name" id="title" placeholder = "Enter Name of Author" required aria-describedby="emailHelp">
               <label for="name_error" class="form-label" id="name_error"></label>
             </div>
             <div class="mb-3">
               <label for="author" class="form-label" style="margin-left: 39%;">Short Description</label>
-              <input type="text" class="form-control" id="author" placeholder = "Enter a short description about Author" required>
+              <input type="text" class="form-control" name="description" id="author" placeholder = "Enter a short description about Author" required>
               <label for="author_error" class="form-label" id="author_error"></label>
             </div><br>
             <div class="mb-3">
                 <label for="imgauthor" class="form-label">Upload Author Image</label>
-                <input type="file" name="imgauthor" id="imgauthor" accept="image/*" required>
+                <input type="file" name="image" id="imgauthor" accept="image/*" required>
             </div><br>
             <br>
             <button type="submit" class="btn btn-primary" style="margin-left: 40%;">Submit</button>
